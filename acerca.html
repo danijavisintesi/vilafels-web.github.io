@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8 ">
+    <title>Vilafels - Página de empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #location {
+            margin-bottom: 40px;
+        }
+
+        #location h2 {
+            color: #333;
+        }
+
+        #location img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #about {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 40px;
+            color: #333;
+            text-align: left;
+        }
+
+        #social {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+        }
+
+        #social a {
+            margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .button-container{
+         position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+
+        .button {
+         background-color: black;
+          color:aliceblue;
+          padding: 10px 20px;
+          border-radius: 5px;
+          margin-left: 10px;
+         font-size: 14px;
+          font-weight: bold;
+         text-decoration: solid;
+        }
+
+        .button:hover { 
+    background-color: #fff;
+    color: black;
+    transition: 0.7s;
+}
+
+    @keyframes desplazar {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html"></a>Vilafels</h1>
+    </header>
+
+    <nav class="button-container">
+        <a href="http://vilafels.com/" class="button">Vilafels</a>
+        <a href="#location" class="button">Ubicacion</a> |
+        <a href="#about"  class="button">Sobre Nosotros</a> |
+        <a href="#social" class="button">Redes Sociales</a>
+    </nav>
+
+    <main>
+        <section id="location">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1498.3349665579613!2d2.0201006388624445!3d41.31604352247239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49cf11e9f2715%3A0xe4e916355dad9e9a!2sAv.%20de%20la%20Generalitat%2C%2036%2C%2008840%20Viladecans%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1683743242965!5m2!1ses!2ses" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos Daniel y Javi, dos entusiastas de la tecnología de 18 años de edad. En Vilafels, nos especializamos en la venta de componentes de alta calidad y en ofrecer servicios de reparación de ordenadores.</p>
+    <p>Nuestra pasión por la informática nos impulsa a brindar soluciones eficientes y confiables a nuestros clientes. Entendemos la importancia de contar con un equipo informático en óptimas condiciones, ya sea para el trabajo, los estudios o el entretenimiento.</p>
+    <p>En Vilafels, nos esforzamos por mantenernos actualizados con las últimas tendencias y avances tecnológicos. Trabajamos con proveedores de confianza para garantizar que los componentes que ofrecemos sean de la más alta calidad y cumplan con los estándares exigentes de rendimiento.</p>
+    <p>Además, nuestro equipo técnico altamente capacitado está listo para resolver cualquier problema que pueda surgir en tus dispositivos. Ya sea una reparación, una actualización de hardware o simplemente una consulta, estamos aquí para ayudarte.</p>
+    <p>¡Confía en nosotros para todas tus necesidades de componentes y reparaciones de ordenadores y descubre cómo podemos mejorar tu experiencia tecnológica!</p>
+        </section>
+
+        <section id="social">
+            <h2>Redes Sociales</h2>
+            <div class="social-media">
+                <a href="https://twitter.com/Vilafels_SL">Twitter</a>
+                <a href="https://instagram.com/javiieritoo08">Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Vilafels
+    </footer>
+</body>
+</html>

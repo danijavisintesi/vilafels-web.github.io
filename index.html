@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vilafels - Página de empresa</title> 
+    <title>Vilafels - Página de empresa</title>
     <link rel="stylesheet" href="css/CSS.css">
-    <meta charset="UTF-8 ">
+    <meta charset="UTF-8">
+    <title>Política de Cookies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            z-index: 100000000;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            z-index: 100000000;
+        }
+
+        p {
+            margin-bottom: 10px;
+            z-index: 100000000;
+        }
+
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            z-index: 9999;
+            z-index: 100000000;
+        }
+        .cookie-banner p {
+            margin: 0 0 10px;
+        }
+
+        .cookie-banner button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 100000000;
+        }
+    
+    </style>
 </head>
 
 <body>
+    <div class="cookie-banner">
+        <h1>Política de Cookies</h1>
+        <p>Utilizamos cookies en nuestro sitio web para mejorar tu experiencia y ofrecerte servicios personalizados.</p>
+        <p>Al hacer clic en "Aceptar", aceptas el uso de todas las cookies. Puedes obtener más información en nuestra <a href="https://www.aepd.es/es/politica-de-privacidad-y-aviso-legal">Política de Privacidad</a>.</p>
+        <button onclick="acceptCookies()">Aceptar</button>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            document.cookie = "cookies_accepted=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
+            document.querySelector('.cookie-banner').style.display = 'none';
+        }
+
+        if (document.cookie.indexOf('cookies_accepted=true') === -1) {
+            document.querySelector('.cookie-banner').style.display = 'block';
+        }
+    </script>
     <header>
         <img src="../img/logo.png" width="50px" >
         <h1 class="titulo">Vilafels</h1>
@@ -17,7 +80,7 @@
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScEVuIniQUZm56j2W2OmTerSLw4I7gjItUtVFjIiXJKiz4-vQ/viewform?vc=0&c=0&w=1&flr=0" class="button">Pide cita</a>
         </div>
     </header>
-
+ 
 <div class="texto">
 </div>
 
